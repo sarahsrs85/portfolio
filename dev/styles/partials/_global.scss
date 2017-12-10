@@ -1,0 +1,74 @@
+// global styles 
+$accentColor:rgb(248, 247, 245);
+$mainLight: rgb(255, 255, 255);
+$mainDark:rgb(0, 0, 0);
+html {
+    font-size: 62.5%;
+    // color:$mainLight; 
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.sectionWrapper {
+    padding: 90px 0;
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+h1 {
+    font-size: 7.2rem;
+    font-weight: 700;
+    margin: 50px 0;
+}
+h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+h3{ 
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+p {
+    font-size: 1.4rem;
+}
+ul {
+    list-style: none;
+    padding: 0; 
+}
+a{
+    text-decoration: none;
+    color: $mainLight;
+        &:visited {
+            color:$mainLight; 
+        }
+        &:active {
+            color:$mainLight;
+        }
+        &:hover {
+        color:$mainDark; 
+    } 
+}
+.title {
+    
+    p {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 60px 0 50px 0;
+    }
+}

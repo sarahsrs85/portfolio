@@ -1,0 +1,22 @@
+//Footer styles
+
+footer {
+    background: $mainDark;
+    nav  {
+        li{
+            background:$mainLight;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            // text-align: center;
+            .fa {
+                color:$mainDark;
+                font-size: 2.4rem;
+            }
+        }
+    }
+    p {
+        color: white;
+    }
+}
+

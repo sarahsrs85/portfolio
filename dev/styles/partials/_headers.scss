@@ -1,0 +1,66 @@
+//header styles
+header {
+    background: grey;
+    min-height: 100vh;
+    color:$mainLight;
+    //background-image: url('../assets/placeholder.jpg');
+    // background-size: cover;
+    // background-attachment: fixed;
+}
+.headerNav {
+    border-bottom: 1px solid white; 
+}
+.headerNav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;    
+}
+.headerNav ul {
+    display: flex;
+    justify-content: space-between;
+    li{ 
+        padding-left: 10px;
+        text-transform: uppercase;
+    &:hover {
+        color:$mainDark;
+        font-weight: 700; 
+    }
+        a{
+        text-decoration: none;
+        }   
+    }
+}
+.hero {
+    position: relative;
+}
+.heroInfo {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    p {
+        text-transform: uppercase;
+        margin: 50px 0;
+    }
+    .btn {
+        font-size: 1.6rem;
+        // background: transparent;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid white;
+        
+        &:visited {
+            color:$mainLight; 
+        }
+        &:active {
+            color:$mainLight;
+        }
+        &:hover {
+        color:$mainDark; 
+        }
+        
+    }
+}  
