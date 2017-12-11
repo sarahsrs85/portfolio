@@ -6,13 +6,16 @@ form {
     display: flex;
     flex-direction: column;
     
+    
     input, textarea {
+        background: $accentColor;
         border: none;
         border-bottom: 1px solid black;;
         background-repeat: no-repeat;
         background-position: 3% ;
         background-size:24px;
         line-height:40px;
+        
     }
     input:placeholder-shown, textarea:placeholder-shown{
         padding-left:50px;
@@ -31,7 +34,7 @@ form {
         
     }
     .submit {
-        background: $mainLight;
+        background: $accentColor;
         width: 150px;
         border: 1px solid $mainDark;
         border-radius: 15px;
