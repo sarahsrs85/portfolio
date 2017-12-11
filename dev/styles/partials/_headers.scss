@@ -9,6 +9,9 @@ header {
 }
 .headerNav {
     border-bottom: 1px solid white;
+
+    // position: fixed;
+    z-index: 3;
 }
 .headerNav .wrapper {
     display: flex;
@@ -19,6 +22,7 @@ header {
     margin: 42px 0;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     li{ 
         padding-left: 15px;
         text-transform: uppercase;
@@ -43,9 +47,7 @@ header {
         }  
     }
 }
-// .hero {
-//     position: relative;
-// }
+//end of menu
 .heroInfo {
     margin: 0 auto;
     text-align: center;

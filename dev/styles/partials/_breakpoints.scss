@@ -12,13 +12,10 @@
     }
     .title {
         h3::before{
-        left: 37%;
+        left: 36%;
         }
-        ::after {
-        left: 58%;
-        }
-        p::before {
-        left: 45%;
+        h3::after {
+        left: 59%;
         }
     }
     .projectInfo {
@@ -39,7 +36,16 @@
     h1 {
     font-size: 5.2rem;
     }
+    .title {
+        h3::before{
+        left: 34%;
+        }
+        h3::after {
+        left: 61%;
+        }
+    }
     .aboutContainer {
+
         .aboutInfo {
         padding-left: 0px;
         }
@@ -48,23 +54,158 @@
             height: 275px;
         }
     }
+    .allProjects {
+        align-items: center;
+        flex-direction: column;
+        .projectImg, .projectInfo {
+            width: 95%;
+        }
+        .projectInfo img {
+            width: 10%;
+        }
+    }
+    .soccer {
+        order:1;
+    }
+    .soccerInfo {
+        order: 2;
+    }
+    .boggler {
+        order:3;
+    }
+    .bogglerInfo {
+        order:4;
+    }
+    .crime {
+        order:5;
+    }
+    .crimeInfo {
+        order:6;
+    }
+    .psd {
+        order:7;
+        margin: 0;
+    }
+    .psdInfo {
+        order:8;
+    }
+    
+    form {
+        width: 80%;
+    }
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
-    .aboutContainer{
+@media (max-width: 540px) {
+    /* menu */
+    .mainNav {
+    width: 60%;
+    }
+    .headerNav .menu {
+    flex-direction: column;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    }
+    .headerNav .menu ul {
+        margin: 0;
+        display: inline-block;
+        li {
+            padding: 10px;
+        }
+    }
+    .headerNav ul {
+    margin: 20px 0;
+    }
+    .headerNav ul li {
+    padding: 10px 10px 0 0;
+    }
+
+/* menu icon */
+
+    .headerNav .menu-icon {
+    cursor: pointer;
     display: inline-block;
-    margin: 0 auto;
+    float: left;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    }
+
+    .headerNav .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+    }
+
+    .headerNav .menu-icon .navicon:before,
+    .headerNav .menu-icon .navicon:after {
+    background: rgb(255, 255, 255);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    }
+
+    .headerNav .menu-icon .navicon:before {
+    top: 5px;
+    }
+
+    .headerNav .menu-icon .navicon:after {
+    top: -5px;
+    }   
+
+/* menu btn */
+
+    .headerNav .menu-btn {
+    display: none;
+    }
+
+    .headerNav .menu-btn:checked ~ .menu {
+    max-height: 100%;
+    }
+
+    .headerNav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+    }
+
+    .headerNav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+    }
+
+    .headerNav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+    }
+
+    .headerNav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .headerNav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+    }
+//End of menu
+    .title {
+        h3::before{
+        left: 28%;
+        }
+        h3::after {
+        left: 67%;
+        }
+    }
+    .aboutContainer{
+        display: flex;
+        flex-direction: column;
     
         .aboutInfo {
         width: 98%;
         }
     }
-    // .allprojects {
-    //     justify-content: space-around;
-    // }
     .projectInfo, .projectImg {
         width: 98%;
     }
-    
+    .projectInfo img {
+        width: 20%;;
+    }
 }

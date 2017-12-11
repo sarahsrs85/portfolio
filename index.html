@@ -17,7 +17,11 @@
             <div class="wrapper">
                 <h2>Sarah Simpson</h2>
                 <nav class="mainNav">
-                    <ul>
+                    <input class="menu-btn visually-hidden" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn">
+                        <span class="navicon"></span>
+                    </label>
+                    <ul class="menu">
                         <li><a href="">Home</a></li>
                         <li><a href="#About">About Sarah</a></li>
                         <li><a href="#Skills">Skills</a></li>
@@ -123,39 +127,43 @@
                 </div>
                 <div class="allProjects">
                     <div class="projectImg soccer">
+                        <img class="soccer" src="dev/assets/soccer_mac.png" alt="">
                     </div>
-                    <div class="projectInfo">
+                    <div class="projectInfo soccerInfo">
                         <p class="projectLabel">REACT.JS & FIREBASE APP
                         </p>
                         <img src="dev/assets/RectangleR.png" alt="">
                         <p>Can You Make It? Is a user-authenticated platform for sports teams to schedule games and players to respond if they are attending. This was a group project built using React.js and Firebase. </p>
                         <p>React / Firebase / JavaScript / Gulp/Github</p>
                     </div>
-                    <div class="projectInfo">
+                    <div class="projectInfo bogglerInfo">
                         <p class="projectLabel">API WEB APPLICATION</p>
                         <img src="dev/assets/RectangleR.png" alt="">
                         <p>
-                         Boggler is an interactive web application that is a twist on the classic game. Built using a Boggle API and Oxford Dictionary
+                        Boggler is an interactive web application that is a twist on the classic game. Built using a Boggle API and Oxford Dictionary
                         API.</p>
                         <p>jQuery / API / JavaScript / Sass</p>
                     </div>
                     <div class="projectImg boggler">
+                        <img src="dev/assets/boggler_mac.png" alt="">
                     </div>
                     <div class="projectImg crime">
+                        <img src="dev/assets/crime_mac.png" alt="">
                     </div>
-                    <div class="projectInfo">
+                    <div class="projectInfo crimeInfo">
                         <p class="projectLabel">JAVASCRIPT WEB APPLICATION</p>
                         <img src="dev/assets/RectangleR.png" alt="">
                         <p>Law & Sorter is an interactive web application that helps you pick the next Crime TV show to watch.</p>
                         <p>jQuery / JavaScript / Sass</p>
                     </div>
-                    <div class="projectInfo">
+                    <div class="projectInfo psdInfo">
                         <p class="projectLabel">PSD TO HTML</p>
                         <img src="dev/assets/RectangleR.png" alt="">
                         <p>Created a single page website given a PSD design layout. Pixel perfect & responsive on all screens.</p>
                         <p>HTML / Sass / Responsive Design</p>
                     </div>
-                    <div class= "projectImg psd">
+                    <div class="projectImg psd">
+                        <img src="dev/assets/course_iphone.png" alt="">
                     </div>
                 </div>
             </div><!-- End of wrapper -->
@@ -166,23 +174,14 @@
                     <h3>Say Hello To Me</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla?</p>
                 </div>
-                <div class="contactInfo">
-                    <form action="http://www.focuspocus.io/magic/sarah@sarahsimpson.io" method="POST">
-                        <input id="name" type="text" required="true" placeholder="Name">
-                        <label for="name" class="visually-hidden">Enter your name</label>
-                        <input id="email" type="email" required="true" placeholder="E-mail">
-                        <label for="email" class="visually-hidden">enter your email</label>
-                        <textarea cols="30" rows="10" name="message" placeholder="Message!"></textarea>
-                        <input class="submit" type="submit" value="Send Message">
-                    </form>
-                    <ul>
-                        <li>
-                            <a href="mailto:sarah@sarahrsimpson.io?Subject=Hello" target="_top">
-                                <span><i class="fa fa-envelope-open-o" aria-hidden="true"></i>E-MAIL</span>
-                                sarah@sarahsimpson.io</a>
-                        </li>
-                    </ul>
-                </div>
+                <form action="http://www.focuspocus.io/magic/sarah@sarahsimpson.io" method="POST">
+                    <input id="name" type="text" required="true" placeholder="Name">
+                    <label for="name" class="visually-hidden">Enter your name</label>
+                    <input id="email" type="email" required="true" placeholder="E-mail">
+                    <label for="email" class="visually-hidden">enter your email</label>
+                    <textarea cols="30" rows="10" name="message" placeholder="Message!"></textarea>
+                    <input class="submit" type="submit" value="Send Message">
+                </form>
             </div><!-- End of wrapper -->
         </section><!-- End of contact section -->
     </main>
