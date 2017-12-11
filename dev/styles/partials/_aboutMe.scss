@@ -1,4 +1,31 @@
 //About me
-.aboutInfo {
-    width: 30%;
+
+.aboutMe {
+    ul {
+        a {
+            color: $mainDark;
+            text-align: left;
+        }
+        i {
+            padding-right: 10px;
+        }
+    }
+    
+}
+.aboutContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .aboutInfo {
+        width: 40%;
+        padding-left: 50px;
+    }
+    img {
+        width: 350px;
+        height: 350px;
+        border: 2px black solid;
+        border-radius: 10px 0px 10px 0px;
+        margin: 0 25px;
+
+    }
 }

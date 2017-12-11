@@ -1,0 +1,69 @@
+//media queries
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .wrapper {
+        width: 98%;
+    }
+    h2 {
+    display: none;
+    }
+    .aboutInfo {
+        width: 40%;
+    }
+    .title {
+        h3::before{
+        left: 37%;
+        }
+        ::after {
+        left: 58%;
+        }
+        p::before {
+        left: 45%;
+        }
+    }
+    .projectInfo {
+        width: 35%;
+    }
+    footer ul {
+        width: 30%;    
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .headerNav .wrapper {
+    flex-wrap: wrap;
+    }
+    h2 {
+    display: none;
+    }
+    .headerNav ul li {
+    padding: 0 10px 0 0;
+    }
+    h1 {
+    font-size: 5.2rem;
+    }
+    
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .aboutContainer{
+    display: inline-block;
+    margin: 0 auto;
+    
+        .aboutInfo {
+        width: 98%;
+        
+        }
+        img {
+            width: 90%;
+            height: 275px;
+        }
+    }
+    // .allprojects {
+    //     justify-content: space-around;
+    // }
+    .projectInfo, .projectImg {
+        width: 98%;
+    }
+}
