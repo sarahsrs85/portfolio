@@ -42,7 +42,18 @@
     h1 {
     font-size: 5.2rem;
     }
-    
+    .aboutContainer {
+        .aboutInfo {
+        padding-left: 0px;
+        }
+        img{
+            width: 275px;
+            height: 275px;
+        }
+    }
+    footer ul {
+        width: 40%;    
+    }
 }
 
 /* Landscape phones and down */
@@ -53,11 +64,6 @@
     
         .aboutInfo {
         width: 98%;
-        
-        }
-        img {
-            width: 90%;
-            height: 275px;
         }
     }
     // .allprojects {
@@ -65,5 +71,8 @@
     // }
     .projectInfo, .projectImg {
         width: 98%;
+    }
+    footer ul {
+        width: 55%;    
     }
 }

@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/e7b9d14514.js"></script>
+    <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
@@ -18,17 +19,17 @@
                 <nav class="mainNav">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">About Sarah</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="#About">About Sarah</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </nav>
                 <nav class="socialNav">
                     <ul>
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-github" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                        <li><a href="https://twitter.com/sarahsimpson_io"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/sarahsrs85"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/sarahrsimpson/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                 </nav>
             </div> <!-- End of wrapper-->
@@ -45,7 +46,7 @@
         </div> <!-- End of wrapper-->
     </header> <!-- End of hero -->
     <main>
-        <section class="aboutMe">
+        <section class="aboutMe" id="About">
                 <div class="wrapper sectionWrapper">
                     <div class="title"> 
                         <h3 >About Sarah</h3>
@@ -68,7 +69,7 @@
                     </div>
                 </div> 
         </section> <!-- End of About section -->
-        <section class="mySkills">
+        <section class="mySkills" id="Skills">
             <div class="wrapper sectionWrapper">
                 <div class="title">
                     <h3>My Awesome Skills</h3>
@@ -114,7 +115,7 @@
                 </ul>
             </div><!-- End of wrapper -->
         </section> <!-- End of skills section -->
-        <section>
+        <section id="Portfolio">
             <div class="wrapper sectionWrapper">
                 <div class="title">
                     <h3>My Portfolio</h3>
@@ -159,7 +160,7 @@
                 </div>
             </div><!-- End of wrapper -->
         </section><!-- End of skills section -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper sectionWrapper">
                 <div class="title">
                     <h3>Say Hello To Me</h3>
@@ -205,5 +206,8 @@
         <!-- // credits // envelope by Austin Condiff from the Noun Project // person by ngamlerdlek.design from the Noun Project //
         Pencil by Popular from the Noun Project -->
     </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="dev/scripts/main.js"></script>
 </body>
 </html>
