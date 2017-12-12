@@ -6,12 +6,12 @@ header {
     background-image:linear-gradient(rgba(48, 47, 47, 0.5),rgba(48,47,47,0.5)), url('../assets/backdrop.jpg');
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    z-index: 0;
 }
 .headerNav {
     border-bottom: 1px solid white;
-
-    // position: fixed;
-    z-index: 3;
+    z-index: 5;
 }
 .headerNav .wrapper {
     display: flex;
@@ -26,28 +26,21 @@ header {
     li{ 
         padding-left: 15px;
         text-transform: uppercase;
-        position: relative; 
-        
-    &:hover {
+        // position: relative; 
+        &:hover {
         color:$mainDark;
         font-weight: 700;
-    }
+        }
         a{
         text-decoration: none;
-        &:hover:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 0;
-        border-style: solid;
-        border-color: $mainDark transparent transparent;
-        position: absolute;
-        top: 58px;
-        }
         }  
     }
 }
+
 //end of menu
+.hero, .heroInfo {
+    z-index: -1;
+}
 .heroInfo {
     margin: 0 auto;
     text-align: center;
@@ -56,16 +49,18 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    
     p {
         text-transform: uppercase;
         margin: 50px 0;
+        
     }
     .btn {
         font-size: 1.6rem;
         // background: transparent;
         text-decoration: none;
         padding: 10px 20px;
-        border: 1px solid white;
+        border: 1px solid $mainLight;
         
         &:visited {
             color:$mainLight; 
@@ -74,7 +69,8 @@ header {
             color:$mainLight;
         }
         &:hover {
-        color:$mainDark; 
+        color:$mainDark;
+        background: rgba(255, 255, 255, 0.778);
         }
         
     }

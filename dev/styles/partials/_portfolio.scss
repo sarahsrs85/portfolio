@@ -11,13 +11,17 @@
         border-radius: 10px 0px 10px 0px;
         text-align: center;
         margin: 15px 15px 0px 0px;
+        &:hover {
+            color: $mainLight;
+            background: $mainDark;
+        }
     }
 }
 .projectImg, .projectInfo {
     margin: 50px 0;
 }
 .projectInfo {
-    width: 30%;
+    width: 40%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -25,12 +29,16 @@
         width: 75px;
         height: 15px;
     }
+    p {
+        line-height: 26px;
+    }
 }
 .projectLabel {
     font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 .projectImg {
-    width: 60%;
+    width: 55%;
 }

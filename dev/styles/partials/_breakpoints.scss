@@ -1,5 +1,7 @@
 //media queries
 /* Portrait tablet and small desktops */
+
+
 @media (max-width: 940px) {
     .wrapper {
         width: 98%;
@@ -11,15 +13,13 @@
         width: 40%;
     }
     .title {
-        h3::before{
-        left: 42%;
-        }
-        h3::after {
-        left: 58%;
-        }
+
+    }
+    .projectImg {
+        width: 50%;
     }
     .projectInfo {
-        width: 35%;
+        width: 47%;
     }
 }
 /* Landscape phone to portrait tablet */
@@ -37,12 +37,6 @@
     font-size: 5.2rem;
     }
     .title {
-        h3::before{
-        left: 38%;
-        }
-        h3::after {
-        left: 62%;
-        }
     }
     .aboutContainer {
 
@@ -91,12 +85,14 @@
         width: 80%;
     }
 }
-
-/* Landscape phones and down */
-@media (max-width: 540px) {
-    /* menu */
+@media (max-width:585px) {
+/* menu */
     .mainNav {
     width: 60%;
+    }
+    .headerNav {
+        background: rgba(79, 78, 78, 0.867);
+        z-index: 5;
     }
     .headerNav .menu {
     flex-direction: column;
@@ -115,7 +111,15 @@
     }
     .headerNav ul li {
     padding: 10px 10px 0 0;
-    }
+        a{
+        
+        &:hover {
+        width: 100%;
+        text-decoration: underline;
+            }
+        } 
+    } 
+    
 
 /* menu icon */
 
@@ -183,13 +187,12 @@
     top: 0;
     }
 //End of menu
-    .title {
-        h3::before{
-        left: 32%;
-        }
-        h3::after {
-        left: 67%;
-        }
+}
+/* Landscape phones and down */
+@media (max-width: 540px) {
+    
+    .title h3::before {
+        width: 50%;
     }
     .aboutContainer{
         display: flex;
