@@ -12,10 +12,10 @@
     }
     .title {
         h3::before{
-        left: 36%;
+        left: 42%;
         }
         h3::after {
-        left: 59%;
+        left: 58%;
         }
     }
     .projectInfo {
@@ -38,10 +38,10 @@
     }
     .title {
         h3::before{
-        left: 34%;
+        left: 38%;
         }
         h3::after {
-        left: 61%;
+        left: 62%;
         }
     }
     .aboutContainer {
@@ -59,9 +59,6 @@
         flex-direction: column;
         .projectImg, .projectInfo {
             width: 95%;
-        }
-        .projectInfo img {
-            width: 10%;
         }
     }
     .soccer {
@@ -188,7 +185,7 @@
 //End of menu
     .title {
         h3::before{
-        left: 28%;
+        left: 32%;
         }
         h3::after {
         left: 67%;
@@ -197,6 +194,7 @@
     .aboutContainer{
         display: flex;
         flex-direction: column;
+        align-items: center;
     
         .aboutInfo {
         width: 98%;
@@ -204,8 +202,5 @@
     }
     .projectInfo, .projectImg {
         width: 98%;
-    }
-    .projectInfo img {
-        width: 20%;;
     }
 }

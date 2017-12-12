@@ -3,7 +3,7 @@ header {
     //background: grey;
     min-height: 100vh;
     color:$mainLight;
-    background-image:linear-gradient(rgba(48, 47, 47, 0.5),rgba(48,47,47,0.5)), url('../../dev/assets/backdrop.jpg');
+    background-image:linear-gradient(rgba(48, 47, 47, 0.5),rgba(48,47,47,0.5)), url('../assets/backdrop.jpg');
     background-size: cover;
     background-attachment: fixed;
 }

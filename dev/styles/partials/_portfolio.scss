@@ -3,6 +3,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    a {
+        width: 130px;
+        color: $mainDark;
+        border: 2px black solid;
+        padding: 10px;
+        border-radius: 10px 0px 10px 0px;
+        text-align: center;
+        margin: 15px 15px 0px 0px;
+    }
 }
 .projectImg, .projectInfo {
     margin: 50px 0;
@@ -13,7 +22,8 @@
     display: flex;
     flex-direction: column;
     img {
-        width: inherit;
+        width: 75px;
+        height: 15px;
     }
 }
 .projectLabel {
