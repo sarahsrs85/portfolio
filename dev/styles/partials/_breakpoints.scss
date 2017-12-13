@@ -12,9 +12,6 @@
     .aboutInfo {
         width: 40%;
     }
-    .title {
-
-    }
     .projectImg {
         width: 50%;
     }
@@ -36,12 +33,16 @@
     h1 {
     font-size: 5.2rem;
     }
-    .title {
-    }
     .aboutContainer {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .aboutInfo {
         padding-left: 0px;
+        width: 80%;
+        }
+        h4 {
+        margin-top: 25px;
         }
         img{
             width: 275px;
@@ -187,6 +188,7 @@
     top: 0;
     }
 //End of menu
+
 }
 /* Landscape phones and down */
 @media (max-width: 540px) {
@@ -194,14 +196,8 @@
     .title h3::before {
         width: 50%;
     }
-    .aboutContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        .aboutInfo {
-        width: 98%;
-        }
+    .mySkills ul li i {
+    font-size: 3.4rem;
     }
     .projectInfo, .projectImg {
         width: 98%;

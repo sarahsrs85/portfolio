@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="icon" href="public/assets/computer.png" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/e7b9d14514.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
-    <!-- <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
     <title>Portfolio</title>
 </head>
@@ -46,25 +45,27 @@
                 <a class="btn" href="#contact">Contact me</a>
             </div>
             <div class="navArrow">
-                <!-- <a href="#aboutMe"> -->
-                <img src="public/assets/doublearrow.png" alt="">
-                <!-- </a> -->
+                <a href="#About">
+                    <img src="public/assets/doublearrow.png" alt="">
+                </a>
             </div>
         </div> <!-- End of wrapper-->
     </header> <!-- End of hero -->
     <main>
-        <section class="aboutMe smoothScroll" id="About">
+        <section class="aboutMe" id="About">
                 <div class="wrapper sectionWrapper">
                     <div class="title"> 
-                        <h3 >About Sarah</h3>
-                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus velit officia, sit ab error quo obcaecati voluptatibus dicta culpa rerum placeat iste minus voluptatum!</p>
+                        <h3 class="titleAbout">About Sarah</h3>
                     </div>
                     
                     <div class="aboutContainer">
-                        <img src="public/assets/sarah.jpg" alt="">
+                        <img src="public/assets/sarah3.jpg" alt="">
                         <div class="aboutInfo">
                             <h4>Sarah Simpson</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero temporibus eveniet placeat ducimus inventore laborum, omnis eaque soluta possimus architecto quod odit error unde. Ea officiis sequi explicabo modi consequuntur?
+                            <p>I am a Web Developer with a passion for problem solving. I have a strong mathematical and logical mindset from my Finance
+                            degree and 10+ years in the banking industry. I am excited to continue
+                            my journey after HackerYou Bootcamp honing my front-end skills while continuing to learn new languages. <p>Outside of work you
+                            will find me performing stand up comedy or playing a wide selection of board games.</p>
                             </p>
                             <ul>
                                 <li>
@@ -76,11 +77,79 @@
                     </div>
                 </div> 
         </section> <!-- End of About section -->
-        <section class="mySkills smoothScroll" id="Skills">
+        <section class="portfolio" id="Portfolio">
+            <div class="wrapper sectionWrapper">
+                <div class="title">
+                    <h3>My Portfolio</h3>
+                    <p>Enjoy some of my latest projects that I had fun building.</p>
+                </div>
+                <div class="allProjects">
+                    <div class="projectImg soccer">
+                        <img class="soccer" src="public/assets/soccer_mac.png" alt="">
+                    </div>
+                    <div class="projectInfo soccerInfo">
+                        <p class="projectLabel">REACT.JS & FIREBASE APP
+                        </p>
+                        <img src="public/assets/RectangleR.png" alt="">
+                        <p>Can You Make It? Is a user-authenticated platform for sports teams to schedule games and players to respond
+                            if they are attending. This was a group project built using React.js and Firebase. </p>
+                        <p>React / Firebase / JavaScript / Gulp/Github</p>
+                        <div>
+                            <a class="btnBlack" href="https://soccerapp-9ccf0.firebaseapp.com/">VIEW LIVE</a>
+                            <a class="btnBlack" href="https://github.com/sarahsrs85/soccerApp">VIEW GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="projectInfo bogglerInfo">
+                        <p class="projectLabel">API WEB APPLICATION</p>
+                        <img src="public/assets/RectangleR.png" alt="">
+                        <p>
+                            Boggler is an interactive web application that is a twist on the classic game. Built using a Boggle API and Oxford Dictionary
+                            API.
+                        </p>
+                        <p>jQuery / API / JavaScript / Sass</p>
+                        <div>
+                            <a class="btnBlack" href="project4/boggler.html">VIEW LIVE</a>
+                            <a class="btnBlack" href="https://github.com/sarahsrs85/boggler">VIEW GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="projectImg boggler">
+                        <img src="public/assets/boggler_mac.png" alt="">
+                    </div>
+                    <div class="projectImg crime">
+                        <img src="public/assets/crime_mac.png" alt="">
+                    </div>
+                    <div class="projectInfo crimeInfo">
+                        <p class="projectLabel">JAVASCRIPT WEB APPLICATION</p>
+                        <img src="public/assets/RectangleR.png" alt="">
+                        <p>Law & Sorter is an interactive web application that helps you pick the next Crime TV show to watch.</p>
+                        <p>jQuery / JavaScript / Sass</p>
+                        <div>
+                            <a class="btnBlack" href="project3/lawNsorter.html">VIEW LIVE</a>
+                            <a class="btnBlack" href="https://github.com/sarahsrs85/lawNsorter">VIEW GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="projectInfo psdInfo">
+                        <p class="projectLabel">PSD TO HTML</p>
+                        <img src="public/assets/RectangleR.png" alt="">
+                        <p>Created a single page website given a PSD design layout. Pixel perfect & responsive on all screens.</p>
+                        <p>HTML / Sass / Responsive Design</p>
+                        <div>
+                            <a class="btnBlack" href="project2/responsive.html">VIEW LIVE</a>
+                            <a class="btnBlack" href="https://github.com/sarahsrs85/PSDconversion">VIEW GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="projectImg psd">
+                        <img src="public/assets/course_iphone.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- End of wrapper -->
+        </section><!-- End of porfolio section -->
+        <section class="mySkills" id="Skills">
             <div class="wrapper sectionWrapper">
                 <div class="title">
                     <h3>My Awesome Skills</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>These are some of my technical skills.</p>
                 </div>
                 <ul>
                     <li class="card">
@@ -122,76 +191,11 @@
                 </ul>
             </div><!-- End of wrapper -->
         </section> <!-- End of skills section -->
-        <section id="Portfolio" class="smoothScroll">
-            <div class="wrapper sectionWrapper">
-                <div class="title">
-                    <h3>My Portfolio</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, inventore!</p>
-                </div>
-                <div class="allProjects">
-                    <div class="projectImg soccer">
-                        <img class="soccer" src="public/assets/soccer_mac.png" alt="">
-                    </div>
-                    <div class="projectInfo soccerInfo">
-                        <p class="projectLabel">REACT.JS & FIREBASE APP
-                        </p>
-                        <img src="public/assets/RectangleR.png" alt="">
-                        <p>Can You Make It? Is a user-authenticated platform for sports teams to schedule games and players to respond if they are attending. This was a group project built using React.js and Firebase. </p>
-                        <p>React / Firebase / JavaScript / Gulp/Github</p>
-                        <div>
-                            <a class="btnBlack" href="https://soccerapp-9ccf0.firebaseapp.com/">VIEW LIVE</a>
-                            <a class="btnBlack" href="https://github.com/sarahsrs85/soccerApp">VIEW GITHUB</a>
-                        </div>
-                    </div>
-                    <div class="projectInfo bogglerInfo">
-                        <p class="projectLabel">API WEB APPLICATION</p>
-                        <img src="dev/assets/RectangleR.png" alt="">
-                        <p>
-                        Boggler is an interactive web application that is a twist on the classic game. Built using a Boggle API and Oxford Dictionary
-                        API.</p>
-                        <p>jQuery / API / JavaScript / Sass</p>
-                        <div>
-                            <a class="btnBlack" href="project4/boggler.html">VIEW LIVE</a>
-                            <a class="btnBlack" href="">VIEW GITHUB</a>
-                        </div>
-                    </div>
-                    <div class="projectImg boggler">
-                        <img src="public/assets/boggler_mac.png" alt="">
-                    </div>
-                    <div class="projectImg crime">
-                        <img src="public/assets/crime_mac.png" alt="">
-                    </div>
-                    <div class="projectInfo crimeInfo">
-                        <p class="projectLabel">JAVASCRIPT WEB APPLICATION</p>
-                        <img src="public/assets/RectangleR.png" alt="">
-                        <p>Law & Sorter is an interactive web application that helps you pick the next Crime TV show to watch.</p>
-                        <p>jQuery / JavaScript / Sass</p>
-                        <div>
-                            <a class="btnBlack" href="project3/lawNsorter.html">VIEW LIVE</a>
-                            <a class="btnBlack" href="">VIEW GITHUB</a>
-                        </div>
-                    </div>
-                    <div class="projectInfo psdInfo">
-                        <p class="projectLabel">PSD TO HTML</p>
-                        <img src="public/assets/RectangleR.png" alt="">
-                        <p>Created a single page website given a PSD design layout. Pixel perfect & responsive on all screens.</p>
-                        <p>HTML / Sass / Responsive Design</p>
-                        <div>
-                            <a class="btnBlack" href="project2/responsive.html">VIEW LIVE</a>
-                            <a class="btnBlack" href="">VIEW GITHUB</a>
-                        </div>
-                    </div>
-                    <div class="projectImg psd">
-                        <img src="public/assets/course_iphone.png" alt="">
-                    </div>
-                </div>
-            </div><!-- End of wrapper -->
-        </section><!-- End of skills section -->
-        <section class="contact smoothScroll" id="contact">
+        <section class="contact" id="contact">
             <div class="wrapper sectionWrapper">
                 <div class="title">
                     <h3>Say Hello To Me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nulla?</p>
+                    <p>I'd love to hear from you. Please reach out!</p>
                 </div>
                 <form action="http://www.focuspocus.io/magic/sarah@sarahsimpson.io" method="POST">
                     <input id="name" type="text" required="true" placeholder="Name">
@@ -230,8 +234,8 @@
         <!-- // credits // envelope by Austin Condiff from the Noun Project // person by ngamlerdlek.design from the Noun Project //
         Pencil by Popular from the Noun Project -->
     </footer>
-    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="dev/scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <script src="public/scripts/main.js"></script>
 </body>
 </html>

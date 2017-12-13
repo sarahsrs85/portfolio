@@ -17,15 +17,26 @@
     width: 100%;
     justify-content: center;
     .aboutInfo {
-        width: 40%;
+        width: 48%;
         padding-left: 50px;
     }
     img {
         width: 350px;
         height: 350px;
-        border: 2px black solid;
+        border: 4px black solid;
         border-radius: 10px 0px 10px 0px;
         margin: 0 25px;
 
+    }
+}
+.titleAbout {
+    margin-bottom: 125px;
+}
+.aboutInfo {
+    h4 {
+        margin-top: 0;
+    }
+    p {
+        line-height: 27px;
     }
 }

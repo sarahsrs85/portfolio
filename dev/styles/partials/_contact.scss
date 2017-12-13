@@ -23,17 +23,17 @@ form {
         padding-left:50px;
     }
     input[type=text] {
-        background-size:30px;
-        background-image:url('../../dev/assets/person.png');  
+        background-size: 32px;
+        background-image:url('../assets/person.png');
+        background-position: 2%;  
     }
     input[type=email] {
-        background-image:url('../../dev/assets/envelope.png');  
+        background-image:url('../assets/envelope.png');  
     }
     textarea {
         height: 150px;
-        background-position: 3% 5%;
-        background-image:url('../../dev/assets/write.png');
-        
+        background-position: 3% 9%;
+        background-image:url('../assets/write.png');
     }
     .submit {
         background: $accentColor;
